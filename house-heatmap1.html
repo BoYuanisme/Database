@@ -6,13 +6,43 @@
     <title>BoYuan的台中熱力圖</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
+            margin: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             font-size: 18px;
+            background: linear-gradient(to bottom, #f9f9f9, #e0e0e0);
+            color: #333;
+        }
+
+        h1 {
+            text-align: center;
+            font-family: 'Arial Black', Gadget, sans-serif;
+            font-size: 24px;
+            color: #444;
+            margin-top: 20px;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        .iframe-container {
+            display: flex;
+            justify-content: center;
+            margin: 30px auto;
+            padding: 10px;
+            max-width: 90%;
+            background: #fff;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            border-radius: 10px;
+        }
+
+        iframe {
+            border-radius: 10px;
+            overflow: hidden;
         }
     </style>
 </head>
 <body>
-        <h1 style="text-align: center;">台中市村里級的人口數熱力圖，透過點擊縣市中的鄉鎮再顯示村里細節</h1>
+    <h1>台中市村里級的人口數熱力圖<br>透過點擊縣市中的鄉鎮再顯示村里細節</h1>
+    <div class="iframe-container">
         <iframe src="https://plotdb.io/v/chart/37193" width="100%" height="600px" allowfullscreen="true" frameborder="0"></iframe>
+    </div>
 </body>
 </html>
