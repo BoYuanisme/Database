@@ -13,37 +13,36 @@
             color: #333;
         }
 
-        h1 {
+        h1, h2, h3 {
             text-align: center;
-            font-family: 'Arial Black', Gadget, sans-serif;
-            font-size: 40px;
-            color: #444;
             margin-top: 20px;
+        }
+
+        h1 {
+            font-family: 'Arial Black', Gadget, sans-serif;
+            font-size: 2.5rem;
+            color: #444;
             text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
         }
 
         h2 {
-            text-align: center;
             font-family: 'Arial Black', Gadget, sans-serif;
-            font-size: 24px;
+            font-size: 1.5rem;
             color: #444;
-            margin-top: 20px;
             text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
         }
 
         h3 {
-            text-align: center;
             font-family: 'Arial Black', Gadget, sans-serif;
-            font-size: 24px;
+            font-size: 1.5rem;
             color: #E26A2C; /* 愛馬仕橘 */
-            margin-top: 20px;
             text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
         }
 
         .iframe-container {
             display: flex;
             justify-content: center;
-            margin: 30px auto;
+            margin: 20px auto;
             padding: 10px;
             max-width: 90%;
             background: #fff;
@@ -52,17 +51,61 @@
         }
 
         iframe {
+            width: 100%;
+            max-width: 800px;
+            height: 50vh; /* 靈活高度設置 */
             border-radius: 10px;
             overflow: hidden;
+            border: none;
+        }
+
+        @media (max-width: 768px) {
+            body {
+                font-size: 16px;
+            }
+
+            h1 {
+                font-size: 2rem;
+            }
+
+            h2, h3 {
+                font-size: 1.2rem;
+            }
+
+            .iframe-container {
+                padding: 5px;
+            }
+
+            iframe {
+                height: 40vh; /* 調整高度以適應小螢幕 */
+            }
+        }
+
+        @media (max-width: 480px) {
+            body {
+                font-size: 14px;
+            }
+
+            h1 {
+                font-size: 1.8rem;
+            }
+
+            h2, h3 {
+                font-size: 1rem;
+            }
+
+            iframe {
+                height: 30vh; /* 手機上更小的高度 */
+            }
         }
     </style>
 </head>
 <body>
     <h1>113-2台中市村里級的65~69歲人口熱力圖</h1>
-    <h2>由圖可知和平區天輪里是台中市65~69歲人口數最少的里，僅有30人，<br>西屯區惠來里則是65~69歲人口數最多的里，有1143人<br>而我的家鄉龍井區新庄里的65~69歲人口數有399人比Q3還多14人。
+    <h2>由圖可知和平區天輪里是台中市65~69歲人口數最少的里，僅有30人，<br>西屯區惠來里則是65~69歲人口數最多的里，有1143人<br>而我的家鄉龍井區...</h2>
     <h3>發展成熟度、生活機能、住宅建設和交通便利性皆是影響人口分布的重要因素。</h3>
     <div class="iframe-container">
-        <iframe src="https://plotdb.io/v/chart/37309" width="100%" height="600px" allowfullscreen="true" frameborder="0"></iframe>
+        <iframe src="https://plotdb.io/v/chart/37309" allowfullscreen="true"></iframe>
     </div>
 </body>
 </html>
